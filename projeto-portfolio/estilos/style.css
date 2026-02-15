@@ -147,7 +147,148 @@ span {
 
 .habilidades {
   background-color: var(--destaque-inverso);
-  width: 80%;
   height: 10px;
   border-radius: 15px; 
+}
+/*Tamanho da barra das habilidades*/
+div#hhtml5  {
+  width: 90%;
+}
+div#hcss3 {
+  width: 80%;
+}
+div#hjavascript {
+  width: 75%;
+}
+div#hphp {
+  width: 60%;
+}
+div#hcomunicaçao {
+  width: 100%;
+}
+div#htrabalho-em-equipe {
+  width: 90%;
+}
+div#hadaptabilidade {
+  width: 85%;
+}
+div#hliderança {
+  width: 80%;
+}
+/*Formação*/
+
+.title-formaçao {
+  margin-top: 50px;
+}
+
+.cursos {
+  margin:15px;
+  padding-left: 10px;
+  border-left: 5px solid var(--destaque-inverso);
+  border-radius: 8px;
+  cursor:pointer;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+.cursos:hover {
+  border-left-width: 15px;
+  box-shadow: black;
+  border-color: var(--destaque);
+}
+
+.-cursos-datas {
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+
+.cursos h3 {
+  color: var(--destaque-inverso);
+}
+
+.-curso-texto {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.conteudo-cursos {
+  background-color: white;
+}
+
+/*Projetos*/
+
+#projetos > div {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 15px 0px;
+  border-radius: 5px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: 0.5s;
+}
+
+#projetos > div:hover {
+  border-left-width:15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#projetos > div > details > p {
+  padding-top: 5px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  width: 98%;
+  display: block;
+  margin: auto;
+}
+
+
+#projetos div > img,#projetos div p,#projetos div h3, #projetos div summary {
+  padding: 0px 10px;
+}
+
+#projetos h3 {
+  font-size: 1.3em;
+}
+
+summary {
+  padding-bottom: 15px;
+}
+
+details {
+  padding-bottom: 5px;
+}
+
+#projetos div img {
+  padding-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+footer {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 50px;
+  background-color: var(--destaque);
+  color: white;
+  padding: 0px 70px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--destaque-inverso);
 }
