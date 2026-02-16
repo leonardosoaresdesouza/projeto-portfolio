@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style-tablet.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5240155cc1.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/script.js"></script>
 </head>
-<body>
-        <nav>
-            <a href="#"><i class="fa-solid fa-house"></i></a>
-            <a href="#"><i class="fa-solid fa-brain"></i></a>
-            <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
-            <a href="#"><i class="fa-solid fa-trowel-bricks"></i></a>
-            <a href="#"><i class="fa-solid fa-moon"></i></a>
+<body class="escuro">
+        <nav id="menu" >
+                <div><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+                <div><a href="#skills"><i class="fa-solid fa-brain"></i></a></div>
+                <div><a href="#formaçao"><i class="fa-solid fa-graduation-cap"></i></a></div>
+                <div><a href="#projetos"><i class="fa-solid fa-trowel-bricks"></i></a></div>
+                <div><a href="#" id="botao-tema" class="link" ><i class="fa-solid fa-moon"></i></a></div>
         </nav>
     <div id="conteudo-total">
         <div id="ficha">
@@ -108,8 +110,8 @@
                 </div>
 
                 <div class="cursos" id="curso3">
-                    <p class="-cursos-datas" >2001 - 2003</p>
                     <div class="conteudo-cursos">
+                        <p class="-cursos-datas" >2001 - 2003</p>
                         <h3>Laboratório de Docência Superior</h3>
                         <p class="-curso-texto">Docência para Ensino Superior Profissional</p>
                     </div>
@@ -143,69 +145,81 @@
             <h1> <i class="fa-solid fa-trowel-bricks"></i> Projetos</h1>
             <div id="projetos">
                 <div class="projeto-1">
-                    <img src="imagens/projeto-06-album.jpg" alt="projeto-album">
-                    <p>2025</p>
-                    <h3>Projeto Álbum de Fotos</h3>
-                    <p>Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um álbum de fotos.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Mostrar fotos de tamanhos diferentes em uma mesma tela pode ser um grande desafio de design, mas também pode ser uma grande oportunidade para treinar nossos conhecimentos adquiridos sobre flexbox e criar uma maneira discreta e de bom-gosto para apresentar nossas memórias em forma de imagens.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-06-album.jpg" alt="projeto-album"></div>
+                    <div class="content-projetos">
+                        <p>2025</p>
+                        <h3>Projeto Álbum de Fotos</h3>
+                        <p>Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um álbum de fotos.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Mostrar fotos de tamanhos diferentes em uma mesma tela pode ser um grande desafio de design, mas também pode ser uma grande oportunidade para treinar nossos conhecimentos adquiridos sobre flexbox e criar uma maneira discreta e de bom-gosto para apresentar nossas memórias em forma de imagens.</p>
+                        </details>
+                    </div>
                 </div>
 
                 <div class="projeto-2">
-                    <img src="imagens/projeto-05-login.jpg" alt="projeto-login">
-                    <p>2024</p>
-                    <h3>Projeto Login</h3>
-                    <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-05-login.jpg" alt="projeto-login"></div>
+                    <div class="content-projetos">
+                        <p>2024</p>
+                        <h3>Projeto Login</h3>
+                        <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
+                        </details>
+                    </div>
                 </div>
                 
                 <div class="projeto-3" >
-                    <img src="imagens/projeto-04-links.jpg" alt="Projeto-redes-sociais">
-                    <p>2024</p>
-                    <h3>Projeto Redes Sociais</h3>
-                    <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-04-links.jpg" alt="Projeto-redes-sociais"></div>
+                    <div class="content-projetos">
+                        <p>2024</p>
+                        <h3>Projeto Redes Sociais</h3>
+                        <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
+                        </details>
+                    </div>
                 </div>
                 
                 <div class="projeto-4" >
-                    <img src="imagens/projeto-03-android.jpg" alt="Projeto-android">
-                    <p>2023</p>
-                    <h3>Projeto Android</h3>
-                    <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-03-android.jpg" alt="Projeto-android"></div>
+                    <div class="content-projetos">
+                        <p>2023</p>
+                        <h3>Projeto Android</h3>
+                        <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
+                        </details>
+                    </div>
                 </div>
                 
                 <div class="projeto-5" >
-                    <img src="imagens/projeto-02-cordel.jpg" alt="Projeto-cordel">
-                    <p>2025</p>
-                    <h3>Projeto Cordel</h3>
-                    <p>Projeto construído para treinar efeito parallax em imagens e a apresentaçao de conteúdo em diversos tamanhos de tela.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-02-cordel.jpg" alt="Projeto-cordel"></div>
+                    <div class="content-projetos">
+                        <p>2025</p>
+                        <h3>Projeto Cordel</h3>
+                        <p>Projeto construído para treinar efeito parallax em imagens e a apresentaçao de conteúdo em diversos tamanhos de tela.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.</p>
+                        </details>
+                    </div>
                 </div>
                 
                 <div class="projeto-6" >
-                    <img src="imagens/projeto-01-videos.jpg" alt="projeto-videos">
-                    <p>2022</p>
-                    <h3>Projeto de Vídeos</h3>
-                    <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
-                    <details>
-                        <summary>Saiba Mais...</summary>
-                        <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
-                    </details>
+                    <div class="img-projeto"><img src="imagens/projeto-01-videos.jpg" alt="projeto-videos"></div>
+                    <div class="content-projetos">
+                        <p>2022</p>
+                        <h3>Projeto de Vídeos</h3>
+                        <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
+                        <details>
+                            <summary>Saiba Mais...</summary>
+                            <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
+                        </details>
+                    </div>
                 </div>
             </div>
             </div>
@@ -213,7 +227,7 @@
      </div>
     </div>
     <footer>
-        <p>Portfólio desenvolvido por <a href="https://github.com/" target="_blank">Leonardo Soares</a> para Curso em video em 2026</p>
+        <p>Portfólio desenvolvido por <a href="https://github.com/" target="_blank">Leonardo </a> para Curso em video em 2026</p>
     </footer>
 </body>
 </html>

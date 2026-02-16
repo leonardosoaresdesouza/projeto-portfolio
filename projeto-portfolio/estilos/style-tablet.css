@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*Para TABLETS*/
+
+@media  screen and (min-width:768px) {
+    #conteudo-total {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 50px 1fr 10px 2fr 50px;
+        grid-template-rows:1fr;
+        gap: 0px;
+        column-gap: 0px;
+    }
+
+    #ficha {
+        grid-column:2 / 3;
+        grid-row: 1 / -1;
+        margin-right: 0px;
+        overflow-y: auto;
+        margin-top: 65px;
+        height: calc(100% - 80px);
+    }
+
+    #ficha p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 1.1em;
+        font-weight: 100;
+    }
+
+    #ficha h1 {
+        padding: 5px 0px;
+    }
+
+    #conteudo {
+        grid-column: 4 / 5;
+        grid-row: 1 / -1;
+        overflow-y: auto;
+        height: 100%;
+        margin-top: 65px;
+        height: calc(100% - 80px);
+    }
+
+    #skills {
+        columns: 2;
+    }
+
+    #social {
+        
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    .projeto-1, .projeto-2, .projeto-3, .projeto-4, .projeto-5, .projeto-6 {
+        display: flex;
+        width: 100%;
+        order: 2;
+    }
+
+    .content-projetos {
+        display: block;
+        width: 2000px;
+        order: -1;
+    }
+
+    #projetos img {
+        object-fit: cover; 
+        border: 10px red;
+    }
+
+}
+
+@media  screen and (min-width:850px) {
+    
+    #ficha {
+        margin-top: 70px;
+    }
+
+    #ficha p {
+        max-width: 20vw;
+    }
+
+}
