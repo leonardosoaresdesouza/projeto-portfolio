@@ -160,6 +160,10 @@ nav div  {
   border-radius: 10px;
 }
 
+#conteudo::-webkit-scrollbar {
+    display: none;
+}
+
 iframe {
   border-radius: 10px;
   width:100%;
